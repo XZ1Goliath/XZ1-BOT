@@ -2188,7 +2188,7 @@ break
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
                 let res = await fetchJson(`https://xteam.xyz/dl/fb?url=${text}&APIKEY=8cb285bb8c355c09`)
-                hisoka.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `⭔ Title : ${anu.result.title}`}, { quoted: m })
+                hisoka.sendMessage(m.chat, { video: { url: res.result.url }, caption: `⭔ Title : ${res.result.title}`}, { quoted: m })
             }
             break
 	        case 'pindl': case 'pinterestdl': {
